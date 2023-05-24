@@ -75,9 +75,9 @@ const Home = () => {
           </select>
         </div>
 
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mt-8 ">
           <p>
-            <h3 className="mt-8 text-xl font-semibold">Summaries</h3>
+            <h3 className="text-xl font-semibold">Summaries</h3>
           </p>
 
           <div className="flex items-center justify-start gap-2 text-xs">
@@ -89,7 +89,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="h-[500px] mt-4 space-y-4">
+        <div className="h-[400px] mt-4 space-y-4">
           {summaries.length > 0 ? (
             summaries.map((summary) => (
               <Card>
@@ -104,7 +104,7 @@ const Home = () => {
             ))
           ) : (
             <Card>
-              <div className="h-[400px] flex items-center justify center">
+              <div className="h-[200px] w-full flex items-center justify-center">
                 <p className="text-gray-400 text-sm">No Summaries added yet!</p>
               </div>
             </Card>
